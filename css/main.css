@@ -150,6 +150,10 @@ a:hover{
   	color:#6e3dae;
  	text-decoration:none;  
 }
+.bold{
+	font-weight:600;	
+	font-style: italic;
+}
 /* ==========================================================================
    generic class
    ========================================================================== */
@@ -299,6 +303,10 @@ ul.social li{
 /* ==========================================================================
    content div
    ========================================================================== */
+.bottomSpace{
+	padding-bottom:30px;
+	overflow:hidden;	
+}
 .content{
 	float:left;
 	width:31.132075%; /* 330px / 1060px */ 
@@ -688,6 +696,9 @@ nav.recovery{
 	line-height:1.425em;
 	font-size:1.475em; /* 35px / 16px */
 	width:75%;
+}
+.bottomSpace{
+	padding-bottom:0;	
 }
 .content{
 	float:none;
