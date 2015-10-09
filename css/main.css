@@ -137,9 +137,10 @@ h3{
     color:#b6a5b7;
 }
 p{
-	color:#868f98;
-	line-height:1.75em;
-    font-size:1em; /* 13px /16px */
+	color: #868f98;
+	line-height: 1.75em;
+	font-size: 1em; /* 13px /16px */
+	text-align: left;
 }
 ul{
     color:#868f98;
@@ -567,7 +568,7 @@ span.copyRight{
 	margin:0 auto;
 }
 /* ==========================================================================
-   about us page
+   about us page and other pages with columns
    ========================================================================== */
 .aboutus{
    text-align:left;
@@ -575,6 +576,7 @@ span.copyRight{
 
 .aboutus .left{
 	width: 250px;
+	margin-right:1.5em;
 	}
 .aboutus figure{
 	width:100%;
@@ -583,6 +585,7 @@ span.copyRight{
 p.aboutus{
 	color:#868f98;
     /*padding-bottom:8%;*/
+	margin-top: 0;
 }
 
 p.teamcontact{
