@@ -1,0 +1,36 @@
+<ul class="social vertical-middle">
+
+    <li><a href="https://www.facebook.com/UWStrongSchools"><span class="fa-stack fa-lg">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-facebook fa-stack-1x"></i>
+    </span></a></li>
+    
+    <li><a href="https://twitter.com/UWStrongSchool"><span class="fa-stack fa-lg">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-twitter fa-stack-1x"></i>
+    </span></a></li>
+    
+    <li><a href="http://instagram.com/UWStrongSchools"><span class="fa-stack fa-lg">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-instagram fa-stack-1x"></i>
+    </span></a></li>
+    
+    
+    <li><a href="https://www.linkedin.com/pub/uw-center-for-strong-schools/63/909/533"><span class="fa-stack fa-lg">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-linkedin fa-stack-1x"></i>
+    </span></a></li>
+    
+    <li><a href="https://plus.google.com/u/0/b/115461323299326850856/115461323299326850856/posts"><span class="fa-stack fa-lg">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-google-plus fa-stack-1x"></i>
+    </span></a></li>
+    
+    <li><a href="https://www.youtube.com/channel/UC0X9gy51uDQkbkN6sCgo2Lg/playlists "><span class="fa-stack fa-lg">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-youtube fa-stack-1x"></i>
+    </span></a></li>
+
+
+
+</ul>

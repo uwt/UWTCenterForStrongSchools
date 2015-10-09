@@ -2,14 +2,14 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"><!-- InstanceBegin template="/Templates/BasePage.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- InstanceBeginEditable name="doctitle" -->
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>Center for strong schools</title>
-<!-- InstanceEndEditable -->
+<!-- TemplateEndEditable -->
 <meta name="description" content="">
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link rel="stylesheet" href="css/normalize.css">
@@ -18,14 +18,14 @@
 <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.css" > -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 
-<!-- InstanceParam name="PageHome" type="text" value="" -->
-<!-- InstanceParam name="PageAbout" type="text" value="" -->
-<!-- InstanceParam name="PageProjects" type="text" value="" -->
-<!-- InstanceParam name="PagePublications" type="text" value="" -->
-<!-- InstanceParam name="PageContact" type="text" value="" -->
+<!-- TemplateParam name="PageHome" type="text" value="" -->
+<!-- TemplateParam name="PageAbout" type="text" value="" -->
+<!-- TemplateParam name="PageProjects" type="text" value="" -->
+<!-- TemplateParam name="PagePublications" type="text" value="" -->
+<!-- TemplateParam name="PageContact" type="text" value="" -->
 
 </head>
 <body>
@@ -44,11 +44,11 @@
 
 <nav>
 <ul class="menu">
-<li><a class="" href="index.html">HOME</a></li>
-<li><a class="" href="aboutus.html">ABOUT US</a></li>
-<li><a class="" href="projects.html">PROJECTS</a></li>
-<li><a class="" href="publications.html">PUBLICATIONS</a></li>
-<li><a class="" href="contact.html">CONTACT</a></li>
+<li><a class="@@(PageHome)@@" href="index.html">HOME</a></li>
+<li><a class="@@(PageAbout)@@" href="aboutus.html">ABOUT US</a></li>
+<li><a class="@@(PageProjects)@@" href="projects.html">PROJECTS</a></li>
+<li><a class="@@(PagePublications)@@" href="publications.html">PUBLICATIONS</a></li>
+<li><a class="@@(PageContact)@@" href="contact.html">CONTACT</a></li>
 
 </ul>
 </nav>
@@ -69,16 +69,7 @@
 <a id="touch-menu" class="mobile-menu" href="#"><b><i class="icon-reorder"></i>Menu</b></a>	
 
 </header>
-<!-- InstanceBeginEditable name="MainPageContent" -->
-
-<div class="sectionTitle"><h1>Publications</h1><p>Whether providing inspiration or research, news or data, our publications offer a wealth of information on the work that The Center for Strong Schools does.</p></div>
-<div class="center">
-<!--<h2>Title 1</h2>-->
-<p class="projects">Below is a list of publications done by those at The Center for Strong Schools including books, book chapters, and peer-reviewed publications.<br>
-<a href="pdf/CSS_Publications.pdf">Click here to view the pdf</a></p>
-</div>
-
-<!-- InstanceEndEditable -->
+<!-- TemplateBeginEditable name="MainPageContent" -->MainPageContent<!-- TemplateEndEditable -->
 
 
 </div>  
@@ -88,7 +79,7 @@
 <div class="page">
   
   <div class="center">
-    <div class="content"> <img src="img/ContactUsFooter.jpg" width="327" height="140" alt="Contact the Center for Strong Schools"/>
+    <div class="content"> <img src="../img/ContactUsFooter.jpg" width="327" height="140" alt="Contact the Center for Strong Schools"/>
       <p>Center for Strong Schools<br>
         1900 Commerce St.<br>
         Tacoma, WA 98402, Box #358435<br>
@@ -147,4 +138,4 @@ ga('create','UA-XXXXX-X');ga('send','pageview');
 <script src="http://twitter.com/statuses/user_timeline/UWStrongSchool.json?callback=twitterCallback2&count=1" type="text/javascript"></script>
 
 </body>
-<!-- InstanceEnd --></html>
+</html>

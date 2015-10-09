@@ -7,6 +7,19 @@
  */
 
 /* ==========================================================================
+   COLORS (using UW Brand where appropriate)
+   ========================================================================== */
+/*
+ PURPLE       : #4b2e83
+ GOLD         : #e8e3d3
+ METALLIC GOLD: #85754d
+ GREY LIGHT   : #d9d9d9
+ GREY DARK    : #444444
+
+
+ */
+
+/* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
@@ -97,7 +110,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
-	background-color:#d8d8d8;
+	background-color:#e8e3d3;
 	font-family: Arial, Helvetica, sans-serif; 	
 }
 figure{
@@ -160,8 +173,17 @@ a:hover{
 .toppadding{
     padding-top:4%;   
 }
+.clear:before,
+.clear:after{
+  content:"";
+  display:table;
+  clear:both;
+  }
+  .clear:after{
+    clear: both;
+    }
 .clear{
-	clear:both;	
+  zoom: 1; /* ie67 */
 }
 .blurb{
 	margin-top:-1em;	
@@ -170,67 +192,75 @@ a:hover{
    Site Banner
    ========================================================================== */
 .banner{
-	background-color:#000000;
-	text-align:center;	
+  text-align:center;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-/* ==========================================================================
-   page container
-   ========================================================================== */
-.page{
-	margin:0 auto;
-	width:90%;
-	max-width:1180px;
-	background-color:#ffffff;	
+.banner .topband{
+  background-color:#4b2e83;
 }
-.logo2{
-	display:none;
+.banner .subband{
+  background-color:#fff;
+  text-align: left;
+  border-bottom: 5px solid #85754d;
+height: 150px;
+}
+.banner #homelogo{
+width: 244px;
+float: left;
+position: relative;
+          z-index: 1;
+}
+.banner nav{
+position: relative;
+top: 50%;
+transform: translateY(-50%);
 }
 
-/* ==========================================================================
-   header
-   ========================================================================== */
-header{
-	background-color:#edeef1;
-	overflow:hidden;	
-}
-header nav {
-	float:left;
-    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT",  "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-    padding:0;
-    margin:0;
-	width:75%
-}
 /* ==========================================================================
    main menu
    ========================================================================== */
 .menu{
 	display:block;
-	padding-top:2.5%;
 	margin-left:3%;
 }
 .menu li{
 	display:inline-block;
 	position:relative;
 	z-index:100;
-	padding-right:3.644068%;
+	/*padding-right:3.644068%;*/
+  padding: 10px;
 }
 .menu li a {
+  padding: 10px;
 	text-decoration:none;
 	display:block;
-	color:#000000;
+	color:#4b2e83;
+  font-weight: bold;
+  text-transform: capitalize;
 	-webkit-transition: all 0.2s ease-in-out 0s;
    -moz-transition: all 0.2s ease-in-out 0s;
    -o-transition: all 0.2s ease-in-out 0s;
    -ms-transition: all 0.2s ease-in-out 0s;
    transition: all 0.2s ease-in-out 0s;
 }
+.menu li a.active {
+	border-bottom:4px solid #4b2e83;
+}
 .menu li:first-child a{
 	border-top:none;
-	padding-top:0;
+	/*padding-top:0;*/
 }
 .menu li a:hover, .menu li:hover > a{
-	color:#000000;
-	text-decoration:underline;
+color:#4b2e83;
+      background-color: #d9d9d9;
+      /*text-decoration:underline;*/
+transform: skew(-15deg, 0deg) ;
+           -webkit-transform: skew(-15deg, 0deg) ;
+           -moz-transform: skew(-15deg, 0deg) ;
+           -o-transform: skew(-15deg, 0deg) ;
+           -ms-transform: skew(-15deg, 0deg) ;
 }
 .menu ul li {
 	display:block;
@@ -275,22 +305,75 @@ header nav {
 	color:#ffffff; 
 	text-decoration:underline;
 }
+
+
+/* ==========================================================================
+   page container
+   ========================================================================== */
+.page{
+	margin:0 auto;
+	width:90%;
+	max-width:1180px;
+	background-color:#ffffff;	
+}
+.logo2{
+	display:none;
+}
+
+/* ==========================================================================
+   header
+   ========================================================================== */
+header{
+	background-color:#fff;
+	overflow:hidden;	
+}
+header nav {
+	float:left;
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT",  "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    padding:0;
+    margin:0;
+	width:75%
+}
 /* ==========================================================================
    social icons
    ========================================================================== */
-span.socialIcons{
+div.socialIcons{
 	width:auto;
 	display:block;	
-}
-ul.social{
-	overflow:hidden;
+	height: 70px;
 	text-align:center;
+}
+div.socialIcons .socialText{
+	font-family:"Myriad Pro", "Gill Sans", "Gill Sans MT",  "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	color: #4b2e83;
+	text-transform:uppercase;
+	font-size:x-large;
+	display: inline-block;
+	}
+ul.social{
+	float: right;
+	margin-right:10px;
 }
 ul.social li{
 	display:inline-block;
-	width:15%;
-	padding:3% 0;
+	/*width:15%;*/
+	/*padding:3% 0;*/
 }
+
+ul.social .fa-stack-2x{
+	font-size:2.5em;
+	color: #4b2e83;
+	}
+
+ul.social .fa-stack-1x{
+	color: #fff;
+	font-size:1.25em;
+	line-height: 2em;
+	}
+ul.social .fa-stack-1x:hover{
+	color: #e8e3d3;
+	}
+
 /* ==========================================================================
    center div
    ========================================================================== */
@@ -299,6 +382,7 @@ ul.social li{
 	margin:0 auto;	
 	overflow:hidden;
 	font-family: Arial, Helvetica, sans-serif;
+  /*margin-top: 250px;*/
 }
 /* ==========================================================================
    content div
@@ -327,6 +411,7 @@ ul.social li{
 	display:block;
 	width:100%;
 	padding-top:6%;
+	padding-bottom:6%;
 }
 blockquote{
 	margin:60px auto;
@@ -407,23 +492,30 @@ blockquote{
    ========================================================================== */
 footer{
     clear:both;
-	background-color:#000000;	
+	background-color:rgb(178, 164, 199);	
+	color: #000;
     overflow:hidden;
     margin:0;
+	padding-top:2em;
 }
 footer .page{
-	background-color:#000000;
+	background-color:rgb(178, 164, 199);	
 }
 footer div.content p{
     font-size:.8125em; /*13px / 16px */
     line-height:1.525em;
 	font-family:"Myriad Pro", "Gill Sans", "Gill Sans MT",  "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-weight:normal;
-    color:#b6a5b7;
+    color:#000;
 }
-footer  a{
-    color:#b6a5b7;
+footer a,
+footer .content,
+footer .content h3{
+    color:#000;
 }
+footer .social{
+	float:none;
+	}
 p.tweet ul{
 	list-style:none;
     margin:0;
@@ -442,7 +534,7 @@ span.copyRight{
 	font-family:"Myriad Pro", "Gill Sans", "Gill Sans MT",  "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-weight:normal;
     text-align:left;
-    color:#b6a5b7;
+    color:#000;
 }
 .socialRecovery li{
 	width:11.333333%;
@@ -478,15 +570,23 @@ span.copyRight{
    about us page
    ========================================================================== */
 .aboutus{
-   text-align:center;
+   text-align:left;
 }
+
+.aboutus .left{
+	width: 250px;
+	}
+.aboutus figure{
+	width:100%;
+	}
+
 p.aboutus{
 	color:#868f98;
-    padding-bottom:8%;
+    /*padding-bottom:8%;*/
 }
 
 p.teamcontact{
-    padding-bottom:1%;
+    padding-bottom:8%;
     color:#868f98;
 
 }
@@ -959,3 +1059,61 @@ menu li a:hover, .menu li:hover > a{
     }
 }
 
+#icon-wrapper{
+	/*height:250px;*/
+}
+#icon-wrapper span{
+/*This is for centering the icons...*/
+}
+#icon-wrapper .fa-lg{
+  font-size: 5em;
+}
+#icon-wrapper .fa-lg div{
+  font-size: 10%;
+}
+
+#icon-wrapper .grad-cap .fa-circle{
+  color: rgb(247,150,70);
+}
+#icon-wrapper .aboutus .fa-circle{
+  color: rgb(254,211,126);
+}
+#icon-wrapper .home .fa-circle{
+  color: rgb(164,214,227);
+}
+#icon-wrapper .whatsnew .fa-circle{
+  color: rgb(162, 210, 141);
+}
+
+#icon-wrapper i{
+color: black;
+}
+#icon-wrapper .icon-container{
+  float: left;
+  width: 24.9%;
+}
+#icon-wrapper .icon-container span{
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+#icon-wrapper .icon-container a{
+  font-size: 1.1em;
+  text-decoration: none;
+  margin-left:auto;
+  margin-right: auto;
+  color: #000;
+}
+
+.vertical-middle-parent{
+		  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+	
+	}
+.vertical-middle{
+	/* Don't forget to add .vertical-middle-parent to the parent element */
+	  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+	}
