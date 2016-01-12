@@ -113,6 +113,11 @@ body{
 	background-color:#e8e3d3;
 	font-family: Arial, Helvetica, sans-serif; 	
 }
+
+/* BEGIN DEBUG */
+/* body {background-color:orange;} */
+/* END DEBUG */
+
 figure{
     width:20%;
     margin:0 auto;
@@ -197,7 +202,16 @@ a:hover{
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  height: 250px;
+  height: 190px;
+
+}
+.banner,
+.banner .subband{
+	-webkit-transition: all .35s ease-in-out;
+	-moz-transition: all .35s ease-in-out;
+	-ms-transition: all .35s ease-in-out;
+	-o-transition: all .35s ease-in-out;
+	transition: all .35s ease-in-out;
 }
 .banner .topband{
   background-color:#4b2e83;
@@ -206,7 +220,7 @@ a:hover{
   background-color:#fff;
   text-align: left;
   border-bottom: 5px solid #85754d;
-height: 200px;
+height: 150px;
 }
 .banner #homelogo{
 width: 244px;
@@ -215,9 +229,16 @@ position: relative;
           z-index: 1;
 }
 .banner nav{
-position: relative;
-top: 50%;
-transform: translateY(-50%);
+	position: relative;
+	/*
+	display: inline-block;
+	background-color: transparent;
+	width: 100%;
+	margin-left: 250px;
+	*/
+	top: 50px;
+	
+	
 }
 
 /* ==========================================================================
@@ -225,27 +246,27 @@ transform: translateY(-50%);
    ========================================================================== */
 .menu{
 	display:block;
-	margin-left:3%;
+	/*margin-left:3%;*/
 }
 .menu li{
 	display:inline-block;
 	position:relative;
 	z-index:100;
 	/*padding-right:3.644068%;*/
-  padding: 10px;
+  	/*padding: 10px;*/
 }
 .menu li a {
-  padding: 10px;
+	padding: 5px;
 	text-decoration:none;
 	display:block;
 	color:#4b2e83;
-  font-weight: bold;
-  text-transform: capitalize;
+	font-weight: bold;
+	text-transform: capitalize;
 	-webkit-transition: all 0.2s ease-in-out 0s;
-   -moz-transition: all 0.2s ease-in-out 0s;
-   -o-transition: all 0.2s ease-in-out 0s;
-   -ms-transition: all 0.2s ease-in-out 0s;
-   transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
 }
 .menu li a.active {
 	border-bottom:4px solid #4b2e83;
@@ -316,8 +337,12 @@ transform: skew(-15deg, 0deg) ;
 	margin:0 auto;
 	width:90%;
 	max-width:1180px;
-	background-color:#ffffff;	
+	background-color:#ffffff;
+	padding-left:10px;
 }
+.page .flexslider{
+	margin-left:-10px; /* To counteract for the padding left applied to .page */
+	}
 .logo2{
 	display:none;
 }
@@ -342,7 +367,7 @@ header nav {
 div.socialIcons{
 	width:auto;
 	display:block;	
-	height: 70px;
+	/*height: 70px;*/
 	text-align:center;
 }
 div.socialIcons .socialText{
@@ -374,6 +399,9 @@ ul.social .fa-stack-1x{
 	}
 ul.social .fa-stack-1x:hover{
 	color: #e8e3d3;
+	}
+.subband ul.social{
+	font-size:0.75em;
 	}
 
 /* ==========================================================================
@@ -749,6 +777,13 @@ bulletListHeader li{
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (max-width: 1027px) {
+/* Hiding top soial media icons when narrow */
+.subband .social.vertical-middle{
+	display: none;
+	}
+}
+
 @media (max-width: 1024px) {
 .infoGraph1{
 	background-image:url(../img/infoGraph1_280.jpg);
@@ -763,8 +798,14 @@ bulletListHeader li{
 	padding-top:9em;	
 }
 
+/* BEGIN DEBUG */
+/* body {background-color:red;} */
+/* END DEBUG */
 
-}
+} /* end max-width 1024 */
+
+
+
 @media (max-width: 968px) {
 header nav{
 	width:100%;
@@ -787,7 +828,15 @@ nav.recovery{
 .quoteAuthor{
 	font-size:.775em; 
 }
-}
+
+/* BEGIN DEBUG */
+/* body {background-color:lime;} */
+/* END DEBUG */
+
+} /* end max-width 968 */
+
+
+
 @media (max-width: 768px) {
 .menu{
 	margin-left:0;
@@ -854,14 +903,40 @@ blockquote{
 footer .content{
 	margin-bottom:0;		
 }
+#icon-wrapper span.icon-container a{
+	font-size:0.75em;
+	}
+
+.subband ul.social{
+	display: none;
+	}
+
+/* BEGIN DEBUG */
+/* body {background-color:purple;} */
+/* END DEBUG */
+
+} /* end max-width 768 */ 
 
 
-
-}
 @media (max-width: 568px)  {
+
 .page{
-	width:95%;	
+	-webkit-transition: all .35s ease-in-out;
+	-moz-transition: all .35s ease-in-out;
+	-ms-transition: all .35s ease-in-out;
+	-o-transition: all .35s ease-in-out;
+	transition: all .35s ease-in-out;
+	width:95%;
+	margin-top:25px;	
 }
+.page.menuopen{
+	-webkit-transition: all .35s ease-in-out;
+	-moz-transition: all .35s ease-in-out;
+	-ms-transition: all .35s ease-in-out;
+	-o-transition: all .35s ease-in-out;
+	transition: all .35s ease-in-out;
+	margin-top:125px;
+	}
 .center{
 	width:95%;	
 }
@@ -978,24 +1053,92 @@ menu li a:hover, .menu li:hover > a{
     float:none;
 	width:100%;
 }
+/*
+* Navigation on narrow screens.
+*/
+.banner{
+	height: 125px;
+	}
+.banner #homelogo{
+	position:absolute;
+	}
+.banner nav{
+	background-color:white;
+	top:0;
+	transform: none;
+	z-index:1;
 }
+.banner .subband{
+	height: 115px;
+}
+.mobile-menu{
+	position:absolute;
+	top:33px;
+	right:10px;
+}
+/*
+* Social icons on narrow screens.
+*/
+
+	
+div.socialIcons{
+	/*height: 120px;*/
+	}
+.socialIcons .socialText{
+	height: 50px;
+	top: 0px;
+	transform: none;
+	}
+.socialIcons .vertical-middle{
+	float:none;
+	width:100%;
+	top: 0px;
+	transform:none;
+	}
+
+/* BEGIN DEBUG */
+/* body {background-color:lightblue;} */
+/* END DEBUG */
+
+} /* end max-width 568 */
+
 @media (max-width: 481px) {
-.banner img{
-	width:80%;
-}
-.recovery li{
-    padding-left:0;
-    font-size:.775em;
-}
+body{
 
 }
+
+#icon-wrapper span.icon-container a{
+font-size:0.5em;
+}
+.banner img{
+	
+}
+.recovery li{
+	padding-left:0;
+	font-size:.775em;
+}
+
+/* BEGIN DEBUG */
+	/* body {background-color: pink;} */
+/* END DEBUG */
+
+
+
+} /* end max-width 481 */
+
+
 @media (max-width: 320px) {
+	
 .socialRecovery li{
 	padding-top:0;
 	width:11.333333%;
 }
 
-}
+/* BEGIN DEBUG */
+/* body {background-color:navy;} */
+/* END DEBUG */
+
+} /* end max-width 320 */
 
 /* ==========================================================================
    Print styles.
@@ -1132,3 +1275,6 @@ color: black;
 	font-size: 2em;
 	text-align:center;
 	}
+	
+
+

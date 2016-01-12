@@ -54,7 +54,7 @@ html[xmlns] .slides {display: block;}
 /* FlexSlider Default Theme
 *********************************/
 .flexslider { 
-margin: 0 0 0 0px; 
+margin: 0 0 25px 0px; 
 background: #fff; 
 border-bottom: 20px solid #85754d;
 /*border: 4px solid #fff;*/ 
