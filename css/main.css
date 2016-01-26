@@ -279,11 +279,12 @@ position: relative;
 color:#4b2e83;
       background-color: #d9d9d9;
       /*text-decoration:underline;*/
-transform: skew(-15deg, 0deg) ;
+
            -webkit-transform: skew(-15deg, 0deg) ;
            -moz-transform: skew(-15deg, 0deg) ;
            -o-transform: skew(-15deg, 0deg) ;
            -ms-transform: skew(-15deg, 0deg) ;
+		   transform: skew(-15deg, 0deg) ;
 }
 .menu ul li {
 	display:block;
@@ -338,10 +339,12 @@ transform: skew(-15deg, 0deg) ;
 	width:90%;
 	max-width:1180px;
 	background-color:#ffffff;
-	padding-left:10px;
+	padding:10px;
 }
 .page .flexslider{
 	margin-left:-10px; /* To counteract for the padding left applied to .page */
+	margin-right: -10px;
+	margin-top:-10px;
 	}
 .logo2{
 	display:none;
@@ -445,7 +448,7 @@ ul.social .fa-stack-1x:hover{
 }
 blockquote{
 	margin:60px auto;
-	font-size:1.875em; /* 35px / 16px */	
+	font-size:1.2em; /* 35px / 16px */	
 	color:#46286d;
 	line-height:1.5em;
 	font-family:"Myriad Pro", "Gill Sans", "Gill Sans MT",  "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
@@ -455,7 +458,7 @@ blockquote{
 }
 .quoteAuthor{
 	display:block;
-	font-size:.6em; 
+	font-size:.85em; 
 	line-height:1.125em;
 	color:#868f98;
 	padding-top:30px;
@@ -473,22 +476,22 @@ blockquote{
 	font-family: Arial, Helvetica, sans-serif;
 }
 .infoGraph1{
-	background-image:url(../img/infoGraph1_340.jpg);
+	background-image:url(../img/TPSgraduate72.png);
 	background-repeat:no-repeat;
 	background-position:top;
-	padding-top:12em;	
+	padding-top:15em;	
 }
 .infoGraph2{
-	background-image:url(../img/infoGraph2_340.jpg);
+	background-image:url(../img/GradRatebydemo72.png);
 	background-repeat:no-repeat;
 	background-position:top;
-	padding-top:12em;	
+	padding-top:15em;	
 }
 .infoGraph3{
-	background-image:url(../img/infoGraph3_340.jpg);
+	background-image:url(../img/Trumangraphic72.png);
 	background-position:top;
 	background-repeat:no-repeat;
-	padding-top:12em;	
+	padding-top:15em;	
 }
 /* ==========================================================================
   recovery nav
@@ -596,13 +599,48 @@ span.copyRight{
 	color:#ffffff;
 	margin:0 auto;
 }
+
+
+
 /* ==========================================================================
    about us page and other pages with columns
    ========================================================================== */
 .aboutus{
    text-align:left;
+   margin-left:30%;
 }
+.aboutus.fa-stack{
+	margin-left: 0;
+	}
+.aboutus-sidebar{
+	background-color:#e8e3d3;
+	height:100%;
+	}
+.aboutus-sidebar > *{
+	padding:10px;
+}
+.aboutus-sidebar > h2{
+	margin-bottom:0;
+	font-weight:bold;
+}
+.aboutus-sidebar h2 + p{
+	margin-top:0;
+	}
+.aboutus-sidebar h2.top,
+.bio-column h2.top{
+	text-align:center;
+	font-weight:bold;
+	}
+.aboutus-sidebar ul{
+	padding-left: 1.25em;
+	/*list-style-type:none;*/
+	}
 
+.aboutus-sidebar ul li{
+	margin-bottom: 1em;/**/
+	
+	}
+	
 .aboutus .left{
 	width: 250px;
 	margin-right:1.5em;
@@ -615,7 +653,37 @@ p.aboutus{
 	color:#868f98;
     /*padding-bottom:8%;*/
 	margin-top: 0;
+}	
+	
+	
+.bio-column h2,
+.bio-column h2 + p{
+	display:inline;
 }
+.bio-column .span_2_of_3 > p{
+	display:inline-block;
+	padding-right:10px;
+}
+.bio-column > h2.top,
+.aboutus-sidebar > h2.top{
+	padding-bottom:10px;
+	text-align:center;
+	display: block;
+	background-color:#46276d;
+	color:#fff;
+	-webkit-box-shadow: 0 8px 8px 0 rgba(0,0,0,.4);
+    -moz-box-shadow: 0 8px 8px 0 rgba(0,0,0,.4);
+    -o-box-shadow: 0 8px 8px 0 rgba(0,0,0,.4);
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,.4);
+	}
+.bio-column p{
+	line-height:180%;
+	}
+.bio-column .bio-name + p{
+	/*display:inline;*/
+	
+	}
+
 
 p.teamcontact{
     padding-bottom:8%;
@@ -771,6 +839,11 @@ bulletListHeader li{
     *zoom: 1;
 }
 
+h2.top{
+	margin-top:0;
+	padding-top: 0;
+	}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -870,6 +943,7 @@ h2{
 	font-size:1.45em;
 	line-height:1em;	
 }
+
 blockquote{
 	font-size:1.25em;
 	width:auto;	
@@ -1096,6 +1170,10 @@ div.socialIcons{
 	transform:none;
 	}
 
+.jqueryui-tabs li{
+	width:100%;
+	}
+
 /* BEGIN DEBUG */
 /* body {background-color:lightblue;} */
 /* END DEBUG */
@@ -1226,16 +1304,16 @@ font-size:0.5em;
 }
 
 #icon-wrapper .grad-cap .fa-circle{
-  color: rgb(247,150,70);
+  color: #CF4858;
 }
 #icon-wrapper .aboutus .fa-circle{
-  color: rgb(254,211,126);
+  color: #F4AC42;
 }
 #icon-wrapper .home .fa-circle{
-  color: rgb(164,214,227);
+  color: #80628B;
 }
 #icon-wrapper .whatsnew .fa-circle{
-  color: rgb(162, 210, 141);
+  color: #16A79D;
 }
 
 #icon-wrapper i{
