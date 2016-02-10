@@ -228,9 +228,23 @@ ga('create','UA-XXXXX-X');ga('send','pageview');
 <script src="http://twitter.com/statuses/user_timeline/UWStrongSchool.json?callback=twitterCallback2&count=1" type="text/javascript"></script>
 -->
 <script src="js/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/jquery.matchHeight.js"></script>
   <script>
   $(function() {
     $( ".jqueryui-tabs" ).tabs();
+	$(".jqueryui-accordion").accordion({
+		collapsible:true,
+		active:false,
+		animate:{
+			easing:"swing",
+			duration:600
+			}
+		});
+	$(".jqueryui-button").button();
+	var matchHeightOptions = {
+		
+		};
+	$(".matchHeight").matchHeight(matchHeightOptions);
   });
   </script>
 
