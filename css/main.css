@@ -147,7 +147,7 @@ ul > li, ol > li {
 }
 ol {
 	color: #868f98;
-	margin-top: -2em;
+	/*margin-top: -2em;*/
 	margin-left: 6%;
 	padding: 0;
 	padding-bottom: 3%;
@@ -1432,8 +1432,14 @@ h2, h3 {
 #projects .purple .morebox:hover a:visited, #projects .purple .morebox:hover a:link {
 	color: #d9d9d9;
 }
+.whatsnew .section {
+	border-bottom: 2px solid #444444;
+}
 .whatsnew .section:nth-of-type(odd) {
-	background-color: lime;
+	background-color: #d9d9d9;
+}
+.whatsnew .section:nth-of-type(odd) p {
+	color: #444444;
 }
 a:hover.jqueryui-button {
 	color: white;
@@ -1447,6 +1453,24 @@ a:hover.jqueryui-button {
 .section.purple .col > * {
 	color: white;
 }
+.purple .section ol {
+	color: #d9d9d9;
+	margin-top: 0.5em;
+}
+/**
+Full-width images.  Typically used in columns.
+**/
+img.fill {
+	width: 100%;
+	height: auto;
+}
+img.fill:before, img.fill:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+img.fill:after {
+	clear: both;
+}
 /* ==========================================================================
    jQuery UI customizations
    ======================================================================= */
@@ -1454,8 +1478,7 @@ a:hover.jqueryui-button {
 .section.purple .col .jqueryui-accordion h3 {
 	margin-top: 0;
 }
-.ui-accordion-header:hover,
- html .ui-accordion-header-active{
+.ui-accordion-header:hover, html .ui-accordion-header-active {
 	color: white;
 }
 .section.purple .col > h3.jqueryui-button {
@@ -1463,7 +1486,36 @@ a:hover.jqueryui-button {
 	width: 99.5%;
 	padding-left: inherit;
 }
-
+/* ==========================================================================
+   Icons 'n fun stuff
+   ======================================================================= */
+.fa.big {
+	font-size: 10em;
+	margin-bottom: 15px;
+}
+.fa {
+	color: #4b2e83;
+}
+.fa.gold {
+	color: #e8e3d3;
+}
+.fa.big:before, .fa.big:after {
+/*display: table; /* 2 */
+}
+.fa.big:after {
+	clear: both;
+}
+.fa.shadow {
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5)
+}
+.fa.big.shadow {
+	text-align: center;
+}
+.fa.centericon {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
 
 /* ==========================================================================
    COLORS (using UW Brand where appropriate)
@@ -1474,6 +1526,4 @@ a:hover.jqueryui-button {
  METALLIC GOLD: #85754d
  GREY LIGHT   : #d9d9d9
  GREY DARK    : #444444
-
-
  */
